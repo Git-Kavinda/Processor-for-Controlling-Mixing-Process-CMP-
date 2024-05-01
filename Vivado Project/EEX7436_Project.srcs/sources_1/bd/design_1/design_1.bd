@@ -1,0 +1,276 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x74714BA5AD815F77",
+      "device": "xc7z020clg484-1",
+      "name": "design_1",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Processor_0": "",
+      "sensor_val_0": "",
+      "RAM_0": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "actuator_rd_item_0": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "actuator_rd_index_0": {
+        "direction": "I",
+        "left": "4",
+        "right": "0"
+      },
+      "Actuator_output_value_0": {
+        "direction": "O",
+        "left": "11",
+        "right": "0"
+      },
+      "ctr_rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "rd_0": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Processor_0": {
+        "vlnv": "xilinx.com:module_ref:Processor:1.0",
+        "xci_name": "design_1_Processor_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Processor",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "ROM_read": {
+            "direction": "O"
+          },
+          "ROM_r_add": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "ROM_d_out": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "actuator_rd_item": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "actuator_rd_index": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Sensor_input_velue": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "Actuator_output_value": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "Sensor_Request_Address": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "ctr_rst": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      },
+      "sensor_val_0": {
+        "vlnv": "xilinx.com:module_ref:sensor_val:1.0",
+        "xci_name": "design_1_sensor_val_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sensor_val",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rd": {
+            "direction": "I"
+          },
+          "r_add": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "RAM_0": {
+        "vlnv": "xilinx.com:module_ref:RAM:1.0",
+        "xci_name": "design_1_RAM_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RAM",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rd": {
+            "direction": "I"
+          },
+          "r_add_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Processor_0/clk",
+          "sensor_val_0/clk",
+          "RAM_0/clk"
+        ]
+      },
+      "RAM_0_data_out": {
+        "ports": [
+          "RAM_0/data_out",
+          "Processor_0/ROM_d_out"
+        ]
+      },
+      "actuator_rd_item_0_1": {
+        "ports": [
+          "actuator_rd_item_0",
+          "Processor_0/actuator_rd_item"
+        ]
+      },
+      "actuator_rd_index_0_1": {
+        "ports": [
+          "actuator_rd_index_0",
+          "Processor_0/actuator_rd_index"
+        ]
+      },
+      "sensor_val_0_data_out": {
+        "ports": [
+          "sensor_val_0/data_out",
+          "Processor_0/Sensor_input_velue"
+        ]
+      },
+      "Processor_0_Sensor_Request_Address": {
+        "ports": [
+          "Processor_0/Sensor_Request_Address",
+          "sensor_val_0/r_add"
+        ]
+      },
+      "Processor_0_ROM_read": {
+        "ports": [
+          "Processor_0/ROM_read",
+          "RAM_0/rd"
+        ]
+      },
+      "Processor_0_ROM_r_add": {
+        "ports": [
+          "Processor_0/ROM_r_add",
+          "RAM_0/r_add_in"
+        ]
+      },
+      "Processor_0_Actuator_output_value": {
+        "ports": [
+          "Processor_0/Actuator_output_value",
+          "Actuator_output_value_0"
+        ]
+      },
+      "ctr_rst_0_1": {
+        "ports": [
+          "ctr_rst_0",
+          "Processor_0/ctr_rst"
+        ]
+      },
+      "rd_0_1": {
+        "ports": [
+          "rd_0",
+          "sensor_val_0/rd"
+        ]
+      }
+    }
+  }
+}

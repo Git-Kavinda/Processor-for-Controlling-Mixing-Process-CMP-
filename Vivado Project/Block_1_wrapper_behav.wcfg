@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2000859fs"></ZoomStartTime>
+      <ZoomEndTime time="2100960fs"></ZoomEndTime>
+      <Cursor1Time time="2064959fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="405"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/design_1_wrapper/clk_0" type="logic">
+      <obj_property name="ElementShortName">clk_0</obj_property>
+      <obj_property name="ObjectShortName">clk_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/ctr_rst_0" type="logic">
+      <obj_property name="ElementShortName">ctr_rst_0</obj_property>
+      <obj_property name="ObjectShortName">ctr_rst_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/rd_0" type="logic">
+      <obj_property name="ElementShortName">rd_0</obj_property>
+      <obj_property name="ObjectShortName">rd_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/actuator_rd_item_0" type="array">
+      <obj_property name="ElementShortName">actuator_rd_item_0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">actuator_rd_item_0[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/actuator_rd_index_0" type="array">
+      <obj_property name="ElementShortName">actuator_rd_index_0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">actuator_rd_index_0[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/Actuator_output_value_0" type="array">
+      <obj_property name="ElementShortName">Actuator_output_value_0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Actuator_output_value_0[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Next_state" type="other">
+      <obj_property name="ElementShortName">Next_state</obj_property>
+      <obj_property name="ObjectShortName">Next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Current_state" type="other">
+      <obj_property name="ElementShortName">Current_state</obj_property>
+      <obj_property name="ObjectShortName">Current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">OUTPUT buf</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Output_Buffer/D" type="array">
+         <obj_property name="ElementShortName">D[11:0]</obj_property>
+         <obj_property name="ObjectShortName">D[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Output_Buffer/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">Speed mem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/wr" type="logic">
+         <obj_property name="ElementShortName">wr</obj_property>
+         <obj_property name="ObjectShortName">wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/RAdd" type="array">
+         <obj_property name="ElementShortName">RAdd[10:0]</obj_property>
+         <obj_property name="ObjectShortName">RAdd[10:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/wdata" type="array">
+         <obj_property name="ElementShortName">wdata[11:0]</obj_property>
+         <obj_property name="ObjectShortName">wdata[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/Wadd" type="array">
+         <obj_property name="ElementShortName">Wadd[10:0]</obj_property>
+         <obj_property name="ObjectShortName">Wadd[10:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group119" type="group">
+      <obj_property name="label">FLAG Mem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">Timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Timer/load" type="logic">
+         <obj_property name="ElementShortName">load</obj_property>
+         <obj_property name="ObjectShortName">load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Timer/Z" type="logic">
+         <obj_property name="ElementShortName">Z</obj_property>
+         <obj_property name="ObjectShortName">Z</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Timer/T" type="array">
+         <obj_property name="ElementShortName">T[11:0]</obj_property>
+         <obj_property name="ObjectShortName">T[11:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group25" type="group">
+      <obj_property name="label">Control Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ctr_rst" type="logic">
+         <obj_property name="ElementShortName">ctr_rst</obj_property>
+         <obj_property name="ObjectShortName">ctr_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/PC_rst" type="logic">
+         <obj_property name="ElementShortName">PC_rst</obj_property>
+         <obj_property name="ObjectShortName">PC_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ins_rst" type="logic">
+         <obj_property name="ElementShortName">ins_rst</obj_property>
+         <obj_property name="ObjectShortName">ins_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/timer_rst" type="logic">
+         <obj_property name="ElementShortName">timer_rst</obj_property>
+         <obj_property name="ObjectShortName">timer_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/in_rdr_reset" type="logic">
+         <obj_property name="ElementShortName">in_rdr_reset</obj_property>
+         <obj_property name="ObjectShortName">in_rdr_reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/mtep_rst" type="logic">
+         <obj_property name="ElementShortName">mtep_rst</obj_property>
+         <obj_property name="ObjectShortName">mtep_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Obuf_rst" type="logic">
+         <obj_property name="ElementShortName">Obuf_rst</obj_property>
+         <obj_property name="ObjectShortName">Obuf_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Ibuf_rst" type="logic">
+         <obj_property name="ElementShortName">Ibuf_rst</obj_property>
+         <obj_property name="ObjectShortName">Ibuf_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/mean_rst" type="logic">
+         <obj_property name="ElementShortName">mean_rst</obj_property>
+         <obj_property name="ObjectShortName">mean_rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/spd_add_load" type="logic">
+         <obj_property name="ElementShortName">spd_add_load</obj_property>
+         <obj_property name="ObjectShortName">spd_add_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/profile_ld" type="logic">
+         <obj_property name="ElementShortName">profile_ld</obj_property>
+         <obj_property name="ObjectShortName">profile_ld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ROM_rd" type="logic">
+         <obj_property name="ElementShortName">ROM_rd</obj_property>
+         <obj_property name="ObjectShortName">ROM_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/PC_en" type="logic">
+         <obj_property name="ElementShortName">PC_en</obj_property>
+         <obj_property name="ObjectShortName">PC_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/PC_ld" type="logic">
+         <obj_property name="ElementShortName">PC_ld</obj_property>
+         <obj_property name="ObjectShortName">PC_ld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/disen_read_block" type="logic">
+         <obj_property name="ElementShortName">disen_read_block</obj_property>
+         <obj_property name="ObjectShortName">disen_read_block</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/timer_ld" type="logic">
+         <obj_property name="ElementShortName">timer_ld</obj_property>
+         <obj_property name="ObjectShortName">timer_ld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/flg_wr" type="logic">
+         <obj_property name="ElementShortName">flg_wr</obj_property>
+         <obj_property name="ObjectShortName">flg_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/flg_wdata" type="logic">
+         <obj_property name="ElementShortName">flg_wdata</obj_property>
+         <obj_property name="ObjectShortName">flg_wdata</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/spd_wr" type="logic">
+         <obj_property name="ElementShortName">spd_wr</obj_property>
+         <obj_property name="ObjectShortName">spd_wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/cal_en" type="logic">
+         <obj_property name="ElementShortName">cal_en</obj_property>
+         <obj_property name="ObjectShortName">cal_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Mean_load" type="logic">
+         <obj_property name="ElementShortName">Mean_load</obj_property>
+         <obj_property name="ObjectShortName">Mean_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Obuf_load" type="logic">
+         <obj_property name="ElementShortName">Obuf_load</obj_property>
+         <obj_property name="ObjectShortName">Obuf_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Ibuf_load" type="logic">
+         <obj_property name="ElementShortName">Ibuf_load</obj_property>
+         <obj_property name="ObjectShortName">Ibuf_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/mtep_load" type="logic">
+         <obj_property name="ElementShortName">mtep_load</obj_property>
+         <obj_property name="ObjectShortName">mtep_load</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ins_ld" type="logic">
+         <obj_property name="ElementShortName">ins_ld</obj_property>
+         <obj_property name="ObjectShortName">ins_ld</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/flg_mem_radd" type="array">
+         <obj_property name="ElementShortName">flg_mem_radd[7:0]</obj_property>
+         <obj_property name="ObjectShortName">flg_mem_radd[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/sen_req_itm" type="array">
+         <obj_property name="ElementShortName">sen_req_itm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">sen_req_itm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/sen_req_idx" type="array">
+         <obj_property name="ElementShortName">sen_req_idx[4:0]</obj_property>
+         <obj_property name="ObjectShortName">sen_req_idx[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Timer_fg" type="logic">
+         <obj_property name="ElementShortName">Timer_fg</obj_property>
+         <obj_property name="ObjectShortName">Timer_fg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/com_fg" type="logic">
+         <obj_property name="ElementShortName">com_fg</obj_property>
+         <obj_property name="ObjectShortName">com_fg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/flg_rd" type="logic">
+         <obj_property name="ElementShortName">flg_rd</obj_property>
+         <obj_property name="ObjectShortName">flg_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ins" type="array">
+         <obj_property name="ElementShortName">ins[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ins[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/sen_req_itm_in" type="array">
+         <obj_property name="ElementShortName">sen_req_itm_in[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sen_req_itm_in[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Current_state" type="other">
+         <obj_property name="ElementShortName">Current_state</obj_property>
+         <obj_property name="ObjectShortName">Current_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Next_state" type="other">
+         <obj_property name="ElementShortName">Next_state</obj_property>
+         <obj_property name="ObjectShortName">Next_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/itm" type="array">
+         <obj_property name="ElementShortName">itm[1:0]</obj_property>
+         <obj_property name="ObjectShortName">itm[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/idx" type="array">
+         <obj_property name="ElementShortName">idx[4:0]</obj_property>
+         <obj_property name="ObjectShortName">idx[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

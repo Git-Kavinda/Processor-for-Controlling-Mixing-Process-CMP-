@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="56227fs"></ZoomEndTime>
+      <Cursor1Time time="57119fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="132"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/design_1_wrapper/clk_0" type="logic">
+      <obj_property name="ElementShortName">clk_0</obj_property>
+      <obj_property name="ObjectShortName">clk_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/ctr_rst_0" type="logic">
+      <obj_property name="ElementShortName">ctr_rst_0</obj_property>
+      <obj_property name="ObjectShortName">ctr_rst_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/rd_0" type="logic">
+      <obj_property name="ElementShortName">rd_0</obj_property>
+      <obj_property name="ObjectShortName">rd_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="group87" type="group">
+      <obj_property name="label">IO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/design_1_wrapper/Actuator_output_value_0" type="array">
+         <obj_property name="ElementShortName">Actuator_output_value_0[11:0]</obj_property>
+         <obj_property name="ObjectShortName">Actuator_output_value_0[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/actuator_rd_index_0" type="array">
+         <obj_property name="ElementShortName">actuator_rd_index_0[4:0]</obj_property>
+         <obj_property name="ObjectShortName">actuator_rd_index_0[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/actuator_rd_item_0" type="array">
+         <obj_property name="ElementShortName">actuator_rd_item_0[1:0]</obj_property>
+         <obj_property name="ObjectShortName">actuator_rd_item_0[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">INs Reg</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ROM_rd" type="logic">
+         <obj_property name="ElementShortName">ROM_rd</obj_property>
+         <obj_property name="ObjectShortName">ROM_rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Ins_reg/Q" type="array">
+         <obj_property name="ElementShortName">Q[11:0]</obj_property>
+         <obj_property name="ObjectShortName">Q[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/ins" type="array">
+         <obj_property name="ElementShortName">ins[3:0]</obj_property>
+         <obj_property name="ObjectShortName">ins[3:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group104" type="group">
+      <obj_property name="label">MEM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Speed_mem/array_reg" type="array">
+         <obj_property name="ElementShortName">array_reg[0:2047][11:0]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[0:2047][11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/No_CTR_sys/Flag_mem/array_reg" type="array">
+         <obj_property name="ElementShortName">array_reg[0:4095][15:0]</obj_property>
+         <obj_property name="ObjectShortName">array_reg[0:4095][15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Current_state" type="other">
+      <obj_property name="ElementShortName">Current_state</obj_property>
+      <obj_property name="ObjectShortName">Current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_wrapper/design_1_i/Processor_0/U0/CONTROL_U/Next_state" type="other">
+      <obj_property name="ElementShortName">Next_state</obj_property>
+      <obj_property name="ObjectShortName">Next_state</obj_property>
+   </wvobject>
+</wave_config>

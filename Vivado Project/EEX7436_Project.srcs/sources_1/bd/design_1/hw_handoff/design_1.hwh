@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Dec 29 13:32:18 2023" VIVADOVERSION="2019.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_0" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Processor_0" PORT="clk"/>
+        <CONNECTION INSTANCE="sensor_val_0" PORT="clk"/>
+        <CONNECTION INSTANCE="RAM_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="actuator_rd_item_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_actuator_rd_item_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Processor_0" PORT="actuator_rd_item"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="4" NAME="actuator_rd_index_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_actuator_rd_index_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Processor_0" PORT="actuator_rd_index"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="11" NAME="Actuator_output_value_0" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_Actuator_output_value">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Processor_0" PORT="Actuator_output_value"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ctr_rst_0" SIGIS="rst" SIGNAME="External_Ports_ctr_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="Processor_0" PORT="ctr_rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rd_0" SIGIS="undef" SIGNAME="External_Ports_rd_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sensor_val_0" PORT="rd"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/Processor_0" HWVERSION="1.0" INSTANCE="Processor_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Processor" VLNV="xilinx.com:module_ref:Processor:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="w_12" VALUE="12"/>
+        <PARAMETER NAME="w_13" VALUE="13"/>
+        <PARAMETER NAME="w_8" VALUE="8"/>
+        <PARAMETER NAME="w_11" VALUE="11"/>
+        <PARAMETER NAME="w_16" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Processor_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ROM_read" SIGIS="undef" SIGNAME="Processor_0_ROM_read">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_0" PORT="rd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="ROM_r_add" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_ROM_r_add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_0" PORT="r_add_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="ROM_d_out" RIGHT="0" SIGIS="undef" SIGNAME="RAM_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="actuator_rd_item" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_actuator_rd_item_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="actuator_rd_item_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="actuator_rd_index" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_actuator_rd_index_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="actuator_rd_index_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="Sensor_input_velue" RIGHT="0" SIGIS="undef" SIGNAME="sensor_val_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sensor_val_0" PORT="data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="Actuator_output_value" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_Actuator_output_value">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Actuator_output_value_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="6" NAME="Sensor_Request_Address" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_Sensor_Request_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sensor_val_0" PORT="r_add"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ctr_rst" SIGIS="rst" SIGNAME="External_Ports_ctr_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ctr_rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/RAM_0" HWVERSION="1.0" INSTANCE="RAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAM" VLNV="xilinx.com:module_ref:RAM:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="D_Width" VALUE="16"/>
+        <PARAMETER NAME="A_Width" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RAM_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rd" SIGIS="undef" SIGNAME="Processor_0_ROM_read">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Processor_0" PORT="ROM_read"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="r_add_in" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_ROM_r_add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Processor_0" PORT="ROM_r_add"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="RAM_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Processor_0" PORT="ROM_d_out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sensor_val_0" HWVERSION="1.0" INSTANCE="sensor_val_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sensor_val" VLNV="xilinx.com:module_ref:sensor_val:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="D_Width" VALUE="8"/>
+        <PARAMETER NAME="A_Width" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sensor_val_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rd" SIGIS="undef" SIGNAME="External_Ports_rd_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rd_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="r_add" RIGHT="0" SIGIS="undef" SIGNAME="Processor_0_Sensor_Request_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Processor_0" PORT="Sensor_Request_Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="sensor_val_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Processor_0" PORT="Sensor_input_velue"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

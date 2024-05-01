@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.828955",
+   "Default View_TopLeft":"159,75",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -10 -y 420 -defaultsOSRD
+preplace port ctr_rst_0 -pg 1 -lvl 0 -x -10 -y 400 -defaultsOSRD
+preplace port rd_0 -pg 1 -lvl 0 -x -10 -y 480 -defaultsOSRD
+preplace portBus actuator_rd_item_0 -pg 1 -lvl 0 -x -10 -y 260 -defaultsOSRD
+preplace portBus actuator_rd_index_0 -pg 1 -lvl 0 -x -10 -y 280 -defaultsOSRD
+preplace portBus Actuator_output_value_0 -pg 1 -lvl 3 -x 850 -y 280 -defaultsOSRD
+preplace inst Processor_0 -pg 1 -lvl 2 -x 590 -y 270 -defaultsOSRD
+preplace inst sensor_val_0 -pg 1 -lvl 1 -x 170 -y 480 -defaultsOSRD
+preplace inst RAM_0 -pg 1 -lvl 1 -x 170 -y 80 -defaultsOSRD
+preplace netloc clk_0_1 1 0 2 10 220 N
+preplace netloc RAM_0_data_out 1 1 1 340 80n
+preplace netloc actuator_rd_item_0_1 1 0 2 NJ 260 NJ
+preplace netloc actuator_rd_index_0_1 1 0 2 NJ 280 NJ
+preplace netloc sensor_val_0_data_out 1 1 1 320 300n
+preplace netloc Processor_0_Sensor_Request_Address 1 0 3 30 180 320J 140 820
+preplace netloc Processor_0_ROM_read 1 0 3 20 170 330J 160 800
+preplace netloc Processor_0_ROM_r_add 1 0 3 30 160 310 150 810
+preplace netloc Processor_0_Actuator_output_value 1 2 1 NJ 280
+preplace netloc ctr_rst_0_1 1 0 2 NJ 400 340
+preplace netloc rd_0_1 1 0 1 NJ 480
+levelinfo -pg 1 -10 170 590 850
+pagesize -pg 1 -db -bbox -sgen -220 0 1100 610
+"
+}
+0

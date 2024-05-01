@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May  1 13:21:16 2024
+# Process ID: 3520
+# Current directory: B:/Vivado_Projects/EEX7436/EEX7436_NEW11/EEX7436_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2488 B:\Vivado_Projects\EEX7436\EEX7436_NEW11\EEX7436_Project\EEX7436_Project.xpr
+# Log file: B:/Vivado_Projects/EEX7436/EEX7436_NEW11/EEX7436_Project/vivado.log
+# Journal file: B:/Vivado_Projects/EEX7436/EEX7436_NEW11/EEX7436_Project\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-1460] Use of init.tcl in C:/Users/S.A.P. Kavinda/AppData/Roaming/Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script 'C:/Users/S.A.P. Kavinda/AppData/Roaming/Xilinx/Vivado/init.tcl'
+start_gui
+open_project B:/Vivado_Projects/EEX7436/EEX7436_NEW11/EEX7436_Project/EEX7436_Project.xpr
+WARNING: [Board 49-91] Board repository path 'C:XilinxVivadoÅ9.2XilinxBoardStore-2019.2' does not exist, it will not be used to search board files.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 631.262 ; gain = 63.129
+update_compile_order -fileset sources_1
