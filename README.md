@@ -14,6 +14,6 @@ Folders contain following Resources:
 ## *Vivado Project:* 
 Contains vivado project files
 
-##*VHDL Code:*
+## *VHDL Code:*
 VHDL code for the processor Design
 
